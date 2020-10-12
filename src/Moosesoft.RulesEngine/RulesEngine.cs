@@ -11,8 +11,14 @@ namespace Moosesoft.RulesEngine
     {
         public bool EvaluateRules(string json, IEnumerable<ExpressionConfig> configurations)
         {
+            if (string.IsNullOrWhiteSpace(json)) 
+                throw new ArgumentException("Cannot be null, empty or whitespace.", nameof(json));
+
             var jobject = JObject.Parse(json);
             var expression = BuildExpressionTree(jobject, configurations);
+            //null expression returned so assume no rules to evaluate and return true
+            if (expression == null) return true; 
+
             var lambda = Expression.Lambda<Func<bool>>(expression);
             var evaluate = lambda.Compile();
 

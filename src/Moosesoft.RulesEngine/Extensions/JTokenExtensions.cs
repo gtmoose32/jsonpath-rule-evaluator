@@ -19,7 +19,7 @@ namespace Moosesoft.RulesEngine.Extensions
                 case JTokenType.None:
                     return null;
                 case JTokenType.Object:
-                    return jtoken.Value<JObject>();  //todo:  determine if something else is needed for object and array
+                    return jtoken.Value<JObject>();  //todo:  determine if something else is needed for object and array and bytes
                 case JTokenType.Array:
                     return jtoken.Value<JArray>();
                 case JTokenType.Constructor:

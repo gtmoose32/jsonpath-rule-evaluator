@@ -9,8 +9,15 @@ namespace Moosesoft.RulesEngine.Extensions
         {
             if (@string == null) throw new ArgumentNullException(nameof(@string));
 
-            var converter = TypeDescriptor.GetConverter(type);
-            return converter.ConvertFromString(@string);
+            try
+            {
+                var converter = TypeDescriptor.GetConverter(type);
+                return converter.ConvertFromString(@string);
+            }
+            catch
+            {
+                return null;
+            }
         }        
     }
 }

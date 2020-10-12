@@ -2,7 +2,7 @@
 {
     public enum LogicalOperator
     {
-        None = 0,
+        None,
         And,
         Or
     }

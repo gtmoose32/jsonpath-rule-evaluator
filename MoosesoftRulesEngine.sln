@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A5BE9A5-4354-43F1-B56A-D0E214E66E32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{80D5FF7B-D55C-4D52-A5CC-09E3EB07F926}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{3C81D714-1C61-4ECA-9B37-A540C16E758D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moosesoft.RulesEngine", "src\Moosesoft.RulesEngine\Moosesoft.RulesEngine.csproj", "{30856185-4131-45ED-A05C-09707D5D7D03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30856185-4131-45ED-A05C-09707D5D7D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30856185-4131-45ED-A05C-09707D5D7D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30856185-4131-45ED-A05C-09707D5D7D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30856185-4131-45ED-A05C-09707D5D7D03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30856185-4131-45ED-A05C-09707D5D7D03} = {8A5BE9A5-4354-43F1-B56A-D0E214E66E32}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C51137B-0B20-4FFA-AFB9-E3912AD0EFF1}
+	EndGlobalSection
+EndGlobal
